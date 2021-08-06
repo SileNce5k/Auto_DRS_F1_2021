@@ -1,0 +1,1 @@
+I use gimp, but you can probably use other applications that allow you to see the position of certain pixels.
