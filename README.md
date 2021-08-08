@@ -3,14 +3,14 @@
 __Right now it only works if your brightness is 136__ (unfortunately this isn't easy to change, or idk how to yet)  
 
 The easiest way for you to use this script if your brightness isn't that value, is to download testColor.ahk, screenshot when you are in the DRS zone. You have to screenshot it uncompressed, or it _most likely_ not work.  
-To screenshot uncompressed images with Steam, go to Settings -> In-Game -> Check "Save an uncompressed copy". Choose a screenshot folder as well. Open paint (GIMP works too), [keep your mouse above this area](image), and ctrl+1.  
+To screenshot uncompressed images with Steam, go to Settings -> In-Game -> Check "Save an uncompressed copy". Choose a screenshot folder as well. Open paint (GIMP works too), [keep your mouse above this area](https://cdn.discordapp.com/attachments/531792242973868042/873862383934779472/2021-08-08_10_00_36-Window.png), and ctrl+1.  
 You should get a message box popup with the correct color. Replace the value in GREEN (1st line) with this value in AutoDRS.ahk.
 
 ---
 
 ## If you have [AutoHotKey](https://www.autohotkey.com/) installed
 
-To use the script click [AutoDRS.ahk](../../../raw/branch/master/AutoDRS.ahk), save with right click -> save page as (or just ctrl+s)  
+To use the script click [AutoDRS.ahk](https://raw.githubusercontent.com/SileNce5k/Auto_DRS_F1_2021/master/AutoDRS.ahk), save with right click -> save page as (or just ctrl+s)  
 To execute, just double click. It should appear in your system tray.  
 To exit the script, you can either right click it in system tray and hit exit, or you can do "ctrl+shift+j".
 
