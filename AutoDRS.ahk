@@ -1,4 +1,5 @@
-﻿GREEN := "0x00D300"
+﻿greenLowLimit := 151 ; green will always be between 151 and 225, 
+greenMaxLimit := 225
 
 getResolution(){
 	WinGetPos, , , Width, Height, F1 2021
@@ -37,12 +38,14 @@ activateDRS(){
 	Send, {f up}
 }
 
+
 Loop {
 	if WinActive("ahk_exe F1_2021_dx12.exe"){
 		resolution := getResolution()
 		if(resolution[2])
 			PixelGetColor, drs, resolution[1], resolution[2]
-			if (drs=GREEN){
+			GREEN := format("{:d}","0x" . substr(drs,5,2))
+			if (GREEN > greenLowLimit and GREEN < greenMaxLimit){
 				activateDRS()
 			}
 	}
