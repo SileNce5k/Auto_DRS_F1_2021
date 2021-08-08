@@ -5,6 +5,8 @@ getResolution(){
 	Switch Height{
 	Case 2160:
 		Height := 1781
+	Case 1600:
+		Height := 1319
 	Case 1440:
 		Height := 1187
 	Case 1200:
