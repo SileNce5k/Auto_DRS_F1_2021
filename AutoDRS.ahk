@@ -1,3 +1,7 @@
+﻿#NoEnv
+SetBatchLines -1
+ListLines Off
+
 greenLowLimit := 151 ; green was always between 151 and 225 in testing, but there is no point in having an upper limit 
 
 getResolution(){
