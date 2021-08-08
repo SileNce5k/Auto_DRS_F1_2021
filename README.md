@@ -1,6 +1,7 @@
 # Automatic DRS for F1 2021 using AutoHotKey
 
-_Might not work if you have any saturation or something similar like image sharpening_ Will maybe look into later if I care.
+_Might not work if you have any saturation or something similar like image sharpening._  
+Will maybe look into later if I care.
 
 ---
 
