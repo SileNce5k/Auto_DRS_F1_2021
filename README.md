@@ -22,6 +22,8 @@ Put the script in this directory.
 
 ## Supported resolutions
 
+* *x2160
+* *x1600
 * *x1440
 * *x1200
 * *x1080
