@@ -10,7 +10,7 @@ You should get a message box popup with the correct color. Replace the value in 
 
 ## If you have [AutoHotKey](https://www.autohotkey.com/) installed
 
-To use the script click [AutoDRS.ahk](https://github.com/SileNce5k/Auto_DRS_F1_2021/raw/branch/master/AutoDRS.ahk), save with right click -> save page as (or just ctrl+s)  
+To use the script click [AutoDRS.ahk](../../../raw/branch/master/AutoDRS.ahk), save with right click -> save page as (or just ctrl+s)  
 To execute, just double click. It should appear in your system tray.  
 To exit the script, you can either right click it in system tray and hit exit, or you can do "ctrl+shift+j".
 
