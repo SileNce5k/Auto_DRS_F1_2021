@@ -1,5 +1,4 @@
-﻿greenLowLimit := 151 ; green will always be between 151 and 225, 
-greenMaxLimit := 225
+﻿greenLowLimit := 151 ; green was always between 151 and 225 in testing, but there is no point in having an upper limit 
 
 getResolution(){
 	WinGetPos, , , Width, Height, F1 2021
@@ -45,7 +44,7 @@ Loop {
 		if(resolution[2])
 			PixelGetColor, drs, resolution[1], resolution[2]
 			GREEN := format("{:d}","0x" . substr(drs,5,2))
-			if (GREEN > greenLowLimit and GREEN < greenMaxLimit){
+			if (GREEN > greenLowLimit){
 				activateDRS()
 			}
 	}
