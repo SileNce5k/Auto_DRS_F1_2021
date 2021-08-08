@@ -1,8 +1,12 @@
 AHK_FILES = *.ahk
 AHK2EXE = "C:/Program Files/AutoHotkey/Compiler/Ahk2Exe.exe"
+OUTPUT = "bin"
 
 build: clean
-	@for file in $(AHK_FILES); do ${AHK2EXE} /in "$$file"; done
+	@mkdir ${OUTPUT}
+	@for file in $(AHK_FILES); do \
+		${AHK2EXE} /in "$$file" /out .\\${OUTPUT}\\; \
+		echo "Compiling $$file"; \
+	done
 clean:
-	@rm -f AutoDRS*.exe
-	@rm -f testColor.exe
+	@rm -rf ${OUTPUT}
