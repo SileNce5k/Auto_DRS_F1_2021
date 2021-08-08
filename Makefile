@@ -1,6 +1,6 @@
 AHK_FILES = *.ahk
 AHK2EXE = "C:/Program Files/AutoHotkey/Compiler/Ahk2Exe.exe"
-OUTPUT = "bin"
+OUTPUT = "build"
 
 build: clean
 	@mkdir ${OUTPUT}
