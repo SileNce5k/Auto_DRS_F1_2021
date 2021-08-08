@@ -39,7 +39,6 @@ Put the script in this directory.
 
 \* can be anything  
 
-Once I figure out how to use resolution higher than my monitor, I will add resolutions higher than 1440p.  
 If the resolution you use isn't listed above, create an issue or send a PR.
 
 ---
