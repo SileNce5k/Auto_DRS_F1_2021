@@ -1,10 +1,6 @@
 # Automatic DRS for F1 2021 using AutoHotKey
 
-__Right now it only works if your brightness is 136__ (unfortunately this isn't easy to change, or idk how to yet)  
-
-The easiest way for you to use this script if your brightness isn't that value, is to download testColor.ahk, screenshot when you are in the DRS zone. You have to screenshot it uncompressed, or it _most likely_ not work.  
-To screenshot uncompressed images with Steam, go to Settings -> In-Game -> Check "Save an uncompressed copy". Choose a screenshot folder as well. Open paint (GIMP works too), [keep your mouse above this area](https://cdn.discordapp.com/attachments/531792242973868042/873862383934779472/2021-08-08_10_00_36-Window.png), and ctrl+1.  
-You should get a message box popup with the correct color. Replace the value in GREEN (1st line) with this value in AutoDRS.ahk.
+_Might not work if you have any saturation or something similar like image sharpening_ Will maybe look into later if I care.
 
 ---
 
