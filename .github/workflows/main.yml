@@ -3,8 +3,8 @@ name: New Release
 on: push
 
 jobs:
-  Example2:
-    name: Example2
+  New_Release:
+    name: New_Release
     runs-on: windows-latest
     steps:
       - name: Checkout
