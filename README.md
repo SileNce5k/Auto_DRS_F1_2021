@@ -1,6 +1,8 @@
 # Automatic DRS for F1 2021 using AutoHotKey
 
-_Might not work if you have any saturation or something similar like image sharpening._  
+Only works if you use the default camera and the default OSD position.
+
+__Might not work if you have any saturation or something similar like image sharpening.__  
 Will maybe look into later if I care.
 
 ---
@@ -17,26 +19,26 @@ Download the latest AutoDRS.exe from releases tab, place it in whatever director
 Execution is the same as above.
 
 To set the script to start up when you login, open the run window (WindowsKey+R) and enter shell:startup.  
-Put the script in this directory.
+Put a shortcut to the script in this directory.
 
 ---
 
 ## Supported resolutions
 
-* *x2160
-* *x1600
-* *x1440
-* *x1200
-* *x1080
-* *x1050
-* *x1200
-* *x1024
-* *x900
-* *x864
-* *x768
-* *x720
+* W x 2160
+* W x 1600
+* W x 1440
+* W x 1200
+* W x 1080
+* W x 1050
+* W x 1200
+* W x 1024
+* W x 900
+* W x 864
+* W x 768
+* W x 720
 
-\* can be anything  
+W can be anything  
 
 If the resolution you use isn't listed above, create an issue or send a PR.
 
