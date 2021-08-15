@@ -2,7 +2,7 @@ AHK_FILES = *.ahk
 AHK2EXE = ahk2exe
 OUTPUT = "build"
 
-build: clean
+build:
 	@mkdir ${OUTPUT}
 	@for file in $(AHK_FILES); do \
 		${AHK2EXE} /in "$$file" /out .\\${OUTPUT}\\; \

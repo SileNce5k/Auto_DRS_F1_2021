@@ -6,19 +6,35 @@ jobs:
   New_Release:
     name: New_Release
     runs-on: windows-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Install Scoop
+        shell: powershell
+        run: |
+          iwr -useb get.scoop.sh | iex
+          scoop bucket add extras
+
+      - name: Add to environment variables
+        shell: powershell
+        run: Write-Output ('Path=' + $Env:SystemDrive + '\Windows\System32' + ';' + $Env:UserProfile + '\scoop\shims') >> $Env:GITHUB_ENV
+
+      - name: Install AutoHotkey & make
+        shell: powershell
+        run: scoop install autohotkey make 
+
       - name: Ahk2Exe
-        uses: nekocodeX/GitHub-Action-Ahk2Exe@main
-        with:
-          in: AutoDRS.ahk
+        shell: powershell
+        run: ahk2exe /in testColor.ahk; ahk2exe /in AutoDRS.ahk
 
       - name: Release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: AutoDRS.exe
+          files: |
+            AutoDRS.exe
+            testColor.exe
         env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}} 
