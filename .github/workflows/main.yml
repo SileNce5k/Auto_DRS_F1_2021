@@ -25,9 +25,13 @@ jobs:
         shell: powershell
         run: scoop install autohotkey make 
 
-      - name: Ahk2Exe
+      - name: compile testColor.ahk
         shell: powershell
-        run: ahk2exe /in testColor.ahk; ahk2exe /in AutoDRS.ahk
+        run: ahk2exe /in testColor.ahk
+        
+      - name: compile autodrs.ahk
+        shell: powershell
+        run: ahk2exe /in AutoDRS.ahk
 
       - name: Release
         uses: softprops/action-gh-release@v1
