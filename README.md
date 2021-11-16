@@ -1,5 +1,7 @@
 # Automatic DRS for F1 2021 using AutoHotKey
 
+## DOES NOT WORK ATM
+
 Only works if you use the default camera and the default OSD position.
 
 __Might not work if you have any saturation or something similar like image sharpening.__  
